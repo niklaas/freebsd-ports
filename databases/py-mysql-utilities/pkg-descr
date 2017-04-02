@@ -1,0 +1,13 @@
+MySQL Utilities is both a set of command-line utilities as well as a Python
+library for making the common tasks easy to accomplish. The library is written
+entirely in Python, meaning that it is not necessary to have any other tools or
+libraries installed to make it work. It is currently designed to work with
+Python v2.6 or later and there is no support (yet) for Python v3.1.
+
+The utilities included are: mysqldbcompare, mysqldbcopy, mysqldbexport,
+mysqldbimport, mysqldiff, mysqldiskusage, mysqlfailover, mysqlfrm,
+mysqlindexcheck, mysqlmetagrep, mysqlprocgrep, mysqlreplicate, mysqlrpladmin,
+mysqlrplcheck, mysqlrplshow, mysqlrplsync, mysqlserverclone, mysqlserverinfo,
+mysqluc, and mysqluserclone.
+
+WWW: https://dev.mysql.com/downloads/utilities/1.6.html
