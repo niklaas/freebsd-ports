@@ -1,0 +1,11 @@
+ppl aims to be address book software for command-line users. It's pronounced
+like "people". You might be interested in ppl if:
+
+* You like using the command-line
+* You want ownership of your address book data back from the cloud
+* You prefer to keep your data stored in an open format
+
+It's built on top of Ruby and Git, and the completely free vcard address book
+format.
+
+WWW: http://ppladdressbook.org
