@@ -1,0 +1,31 @@
+#!/bin/sh
+
+# $FreeBSD$
+#
+# PROVIDE: poolmon
+# REQUIRE: LOGIN
+# KEYWORD: shutdown
+#
+# Add these lines to /etc/rc.conf.local or /etc/rc.conf
+# to enable this service:
+#
+# poolmon_enable (bool): Set to NO by default. Set it to YES to enable poolmon.
+# poolmon_flags (string): Add additional flags if you want to.
+
+. /etc/rc.subr
+
+name=poolmon
+rcvar=poolmon_enable
+
+load_rc_config $name
+
+: ${poolmon_enable:="NO"}
+
+command=%%PREFIX%%/bin/${name}
+command_interpreter=%%PERL%%
+pidfile=/var/run/${name}.pid
+logfile=syslog
+
+command_args="-k $pidfile -l $logfile"
+
+run_rc_command "$1"
