@@ -22,10 +22,7 @@ MY_DEPENDS=		${PYTHON_PKGNAMEPREFIX}apsw>=3.7:databases/py-apsw \
 BUILD_DEPENDS=	${MY_DEPENDS}
 RUN_DEPENDS=	${MY_DEPENDS}
 
-CPPFLAGS+=-I${LOCALBASE}/include
-LDFLAGS+=-L${LOCALBASE}/lib
-
-USES=		python:3.3+ tar:bz2 sqlite
+USES=		python:3.3+ tar:bz2 sqlite localbase
 USE_PYTHON=	autoplist distutils
 
 post-install:
